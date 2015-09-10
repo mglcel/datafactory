@@ -45,7 +45,7 @@ import org.fluttercode.datafactory.NameDataValues;
 public final class DataFactory {
 
   // used for backwards compatibility
-  private static Random original_random = new Random(93285);
+  private static Random original_random = new Random((int)(Math.random() * 100000));
 
   private NameDataValues nameDataValues = new DefaultNameDataValues();
   private AddressDataValues addressDataValues = new DefaultAddressDataValues();
